@@ -10,7 +10,9 @@ class HomeController extends Controller
 {
     public function index(){
 
-        $trains = Train::where('data_partenza', '>', now()->toDateString())->get();
+        $trains = Train::where('data_partenza', '>', now())
+        ->orderBy('data_partenza', 'asc')
+        ->get();
 
         return view("home", ["trains"=>$trains]);
     }

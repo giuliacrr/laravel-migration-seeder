@@ -7,7 +7,6 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th><!--ID-->
                 <th scope="col">Train brand:</th><!--Marca treno-->
                 <th scope="col">Train:</th><!--numero treno-->
                 <th scope="col">From:</th><!--parte da-->
@@ -23,7 +22,6 @@
         <tbody>
             @foreach($trains as $train)
             <tr>
-                <th scope="row">{{$train->id}}</th><!---->
                 <td>{{$train->azienda}}</td><!--Marca treno-->
                 <td>{{$train->codice_treno}}</td><!--numero treno-->
                 <td>{{$train->stazione_partenza}}</td><!--parte da-->

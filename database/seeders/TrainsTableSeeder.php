@@ -24,7 +24,7 @@ class TrainsTableSeeder extends Seeder
             $train->numero_carrozze = $faker->biasedNumberBetween(0, 10);
             $train->in_orario = $faker->boolean();
             $train->cancellato = $faker->boolean();
-            $train->data_partenza = $faker->dateTimeInInterval("-3 days", " +5 days");
+            $train->data_partenza = $faker->dateTimeInInterval("-3 days", " +300 days");
 
             $train->save();
         }
